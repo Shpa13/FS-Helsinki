@@ -3,7 +3,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    note over browser,server: User writes "new notes" and presses Submit
+    note over browser: User writes "new notes" and presses Submit
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server-->>browser: 302 redirect > /exampleapp/notes 
